@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>じゃんけん</title>
+<link rel="stylesheet" href="pon.css">
+<script src="pon.js"></script>
+</head>
+
+<body>
+	<script>
+		window.onload = function() {
+			初期設定();
+		}
+	</script>
+	<p id="msg1"></p>
+	<p id="msg2"></p>
+	<br>
+	出す手のボタンを押す。
+	<br>
+	<button onclick="じゃんけん(1,H1,H2,G1,G2,C1,C2,P1,P2,R1,R2)">グー</button>
+	<button onclick="じゃんけん(2,H1,H2,G1,G2,C1,C2,P1,P2,R1,R2)">チョキ</button>
+	<button onclick="じゃんけん(3,H1,H2,G1,G2,C1,C2,P1,P2,R1,R2)">パー</button>
+	<br>
+	強化したい手を選択してください。
+	<br>
+	<input value=1 type="radio" id="G" name="強化" checked="checked">グー
+	<input value=2 type="radio" id="C" name="強化">チョキ
+	<input value=3 type="radio" id="P" name="強化">パー
+	<br>
+	<br>状況
+
+	<table border="1">
+		<tr>
+			<td>あなた</td>
+			<td>VS</td>
+			<td>CPU</td>
+		</tr>
+		<tr>
+			<td>
+				<p id="H1"></p>
+			</td>
+			<td><p class="tablemozi">残HP</p></td>
+			<td>
+				<p id="H2"></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id="G1"></p>
+			</td>
+			<td><p class="tablemozi">グーの攻撃力</p></td>
+			<td>
+				<p id="G2"></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id="C1"></p>
+			</td>
+			<td><p class="tablemozi">チョキの攻撃力</p></td>
+			<td>
+				<p id="C2"></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id="P1"></p>
+			</td>
+			<td><p class="tablemozi">パーの攻撃力</p></td>
+			<td>
+				<p id="P2"></p>
+			</td>
+		</tr>
+	</table>
+
+	<p id="R1"></p>
+	<p id="R2"></p>
+	<p>
+		<a href="./pon.html">最初から（このページのリロード）</a>
+	</p>
+	<br>
+
+</body>
+
+</html>

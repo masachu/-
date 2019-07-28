@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>じゃんけん</title>
+<link rel="stylesheet" href="pon.css">
+<script src="pon.js"></script>
+</head>
+
+<body>
+<button onclick="初期設定()">じゃんけんを始める・初期設定</button>
+  <p id="msg1"></p>
+  <p id="msg2"></p>
+<br>
+<button onclick="じゃんけん(1,H1,H2,G1,G2,C1,C2,P1,P2,rireki1,rireki2)">グー</button>
+<button onclick="じゃんけん(2,H1,H2,G1,G2,C1,C2,P1,P2,rireki1,rireki2)">チョキ</button>
+<button onclick="じゃんけん(3,H1,H2,G1,G2,C1,C2,P1,P2,rireki1,rireki2)">パー</button>
+<br>
+<br>状況
+
+<table border="1" width="200" height="1" cellspacing="1" cellpadding="1">
+<tr>
+<td>  <p id="H1"></p></td>
+<td> <p id="H2"></p></td>
+</tr>
+<tr>
+<td> <p id="G1"></p></td>
+<td>  <p id="G2"></p></td>
+</tr>
+<tr>
+<td><p id="C1"></p></td>
+<td><p id="C2"></p></td>
+</tr>
+<tr>
+<td><p id="P1"></p></td>
+<td><p id="P2"></p></td>
+</tr>
+</table>
+
+ 
+ 
+
+  
+  
+  
+  
+  <p id="rireki1"></p>
+  <p id="rireki2"></p>
+<p><a href="./pon.html">最初から（このページのリロード）</a></p>
+<br>
+
+</body>
+
+</html>

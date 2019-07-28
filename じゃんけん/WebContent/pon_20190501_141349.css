@@ -1,0 +1,17 @@
+@charset "UTF-8";
+body{
+font-size:15pt;
+color:black;
+background-color:#eeffee;
+text-align:center;
+
+}
+p{
+color:blue;
+}
+
+input.nyuryoku{
+font-size:15pt;
+width: 120px;
+
+}
